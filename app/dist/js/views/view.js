@@ -20,5 +20,6 @@ export class View {
                 .replace(/<script>[\s\S]*?<\/script>/, '');
         }
         this.elemento.innerHTML = template;
+        const t2 = performance.now();
     }
 }

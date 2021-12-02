@@ -23,6 +23,7 @@ export abstract class View<T> {
                 .replace(/<script>[\s\S]*?<\/script>/, '');
         }
         this.elemento.innerHTML = template;
+        const t2 = performance.now();
     }
 
     protected abstract template(model: T): string;
