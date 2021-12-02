@@ -13,6 +13,7 @@ export class View {
         }
     }
     update(model) {
+        const t1 = performance.now();
         let template = this.template(model);
         if (this.escapar) {
             template = template

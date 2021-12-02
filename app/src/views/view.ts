@@ -16,6 +16,7 @@ export abstract class View<T> {
     }
 
     public update(model: T): void {
+        const t1 = performance.now();
         let template = this.template(model);
         if (this.escapar) {
             template = template
