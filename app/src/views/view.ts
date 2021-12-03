@@ -24,6 +24,7 @@ export abstract class View<T> {
         }
         this.elemento.innerHTML = template;
         const t2 = performance.now();
+        console.log(`Tempo de execução do método update: ${(t2-t1)/100}`)
     }
 
     protected abstract template(model: T): string;
