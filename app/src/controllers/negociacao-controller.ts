@@ -23,6 +23,7 @@ export class NegociacaoController {
         /*
             Zé, você já viu isso?
         */
+            const t1 = performance.now();
         const negociacao = Negociacao.criaDe(
             this.inputData.value, 
             this.inputQuantidade.value,
