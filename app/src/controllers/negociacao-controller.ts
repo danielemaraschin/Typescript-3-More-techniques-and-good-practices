@@ -39,6 +39,7 @@ export class NegociacaoController {
         this.negociacoes.adiciona(negociacao);
         this.limparFormulario();
         this.atualizaView();
+        const t2 = performance.now();
     }
 
     private ehDiaUtil(data: Date) {
