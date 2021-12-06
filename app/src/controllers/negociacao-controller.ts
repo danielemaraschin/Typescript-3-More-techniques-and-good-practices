@@ -40,6 +40,7 @@ export class NegociacaoController {
         this.limparFormulario();
         this.atualizaView();
         const t2 = performance.now();
+        console.log(`Tempo de execução do método adiciona ${(t2-t1)/1000}`)
     }
 
     private ehDiaUtil(data: Date) {
