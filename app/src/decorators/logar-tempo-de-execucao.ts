@@ -4,6 +4,8 @@ export function logarTempoDeExecucao(){
         propertyKey: string,
         descriptor: PropertyDescriptor
     ){
+        const metodoOriginal = descriptor.value;
+        
         return descriptor;
     }
 
