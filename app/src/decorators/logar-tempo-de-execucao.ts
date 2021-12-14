@@ -5,6 +5,7 @@ export function logarTempoDeExecucao(){
         descriptor: PropertyDescriptor
     ){
         const metodoOriginal = descriptor.value;
+        const t1 = performance.now()
         
         return descriptor;
     }
