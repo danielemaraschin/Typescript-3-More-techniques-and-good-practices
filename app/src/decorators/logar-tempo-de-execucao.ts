@@ -9,6 +9,7 @@ export function logarTempoDeExecucao(){
         const retorno = metodoOriginal();
         const t2 = performance.now();
         
+        
         return descriptor;
     }
 
