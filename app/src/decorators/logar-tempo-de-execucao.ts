@@ -5,10 +5,13 @@ export function logarTempoDeExecucao(){
         descriptor: PropertyDescriptor
     ){
         const metodoOriginal = descriptor.value;
-        const t1 = performance.now();
-        const retorno = metodoOriginal();
-        const t2 = performance.now();
-        console.log(`${propertyKey}, tempo de execução: ${(t2-t1)/1000 } segundos`)
+        descriptor.value = function(){
+            const t1 = performance.now();
+            const retorno = metodoOriginal();
+            const t2 = performance.now();
+            console.log(`${propertyKey}, tempo de execução: ${(t2-t1)/1000 } segundos`)
+        }
+       
         
         return descriptor;
     }
