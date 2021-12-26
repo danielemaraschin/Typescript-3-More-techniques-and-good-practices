@@ -4,7 +4,7 @@ export function logarTempoDeExecucao(){
         propertyKey: string, //nome do método original
         descriptor: PropertyDescriptor
     ){
-        const metodoOriginal = descriptor.value; //descriptor é o método original
+        const metodoOriginal = descriptor.value; //descriptor é o método original decorado
         descriptor.value = function(){
             const t1 = performance.now();
             const retorno = metodoOriginal();
