@@ -10,6 +10,7 @@ export function logarTempoDeExecucao(){
             const retorno = metodoOriginal();
             const t2 = performance.now();
             console.log(`${propertyKey}, tempo de execução: ${(t2-t1)/1000 } segundos`) //divide p/1000 para obter valor em segundos
+                        //nome do método
         };
     
         return descriptor;
