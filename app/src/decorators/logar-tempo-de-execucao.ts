@@ -11,7 +11,7 @@ export function logarTempoDeExecucao(){
             const t2 = performance.now();
             console.log(`${propertyKey}, tempo de execução: ${(t2-t1)/1000 } segundos`) //divide p/1000 para obter valor em segundos
                         //nome do método
-            retorno
+            retorno //se a funcao original n retornar nada, dará undefined mas nao tem problema pq eh um codigo generico e precisa ter retorno caso a funcao q for decorada tenha retorno
         };
     
         return descriptor; //retorna o retorno do métodoOriginal
