@@ -1,4 +1,4 @@
-export function logarTempoDeExecucao(emSegundos : boolean = false){
+export function logarTempoDeExecucao(emSegundos : boolean = false){ //se nao passar parametro, é false
     return function(
         target: any,
         propertyKey: string, //nome do método original
