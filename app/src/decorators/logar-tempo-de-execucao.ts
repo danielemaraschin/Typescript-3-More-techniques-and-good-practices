@@ -1,4 +1,4 @@
-export function logarTempoDeExecucao(emSegundos : boolean){
+export function logarTempoDeExecucao(emSegundos : boolean = false){
     return function(
         target: any,
         propertyKey: string, //nome do método original
