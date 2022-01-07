@@ -1,4 +1,5 @@
 export function logarTempoDeExecucao(emSegundos : boolean = false){ //se nao passar parametro, é false
+    //se nao tivesse o =false, seria obrigatorio sempre passar parametro, assim se nao passar é false o valor padrao
     return function(
         target: any,
         propertyKey: string, //nome do método original
