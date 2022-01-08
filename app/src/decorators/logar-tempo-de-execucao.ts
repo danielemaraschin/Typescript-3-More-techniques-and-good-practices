@@ -9,6 +9,10 @@ export function logarTempoDeExecucao(emSegundos : boolean = false){ //se nao pas
         descriptor.value = function(...args:any[]){ //this será no contexto a partir dessa chaves{
             let divisor = 1;
             let unidade = "milissegundos";
+            if(emSegundos){
+                divisor = 1000;
+                unidade = "segundos"
+            }
             
             const t1 = performance.now();
             const retorno = metodoOriginal.apply(this, args);
