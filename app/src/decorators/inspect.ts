@@ -4,7 +4,7 @@ export function inspect() {
         propertyKey: string, //nome do method
         descriptor: PropertyDescriptor //referencia ao method
     ) {
-        const metodoOriginal = descriptor.value;
+        const metodoOriginal = descriptor.value; //para acessarmos o metodo 
     }
 
 
