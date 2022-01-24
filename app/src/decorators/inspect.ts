@@ -6,7 +6,7 @@ export function inspect() {
     ) {
         const metodoOriginal = descriptor.value; //para acessarmos o metodo 
         descriptor.value = function(...args:any[]){
-         const retorno = metodoOriginal.apply()  
+         const retorno = metodoOriginal.apply(this, args)  
         }
         return descriptor;
 
