@@ -8,7 +8,7 @@ export function inspect() {
         descriptor.value = function(...args:any[]){
            
         }
+        return descriptor;
+
     }
-
-
 }
